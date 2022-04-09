@@ -17,6 +17,7 @@ fetch(url)
 .then(res => res.json()) //parse respnse as JSON
 .then(data => {
 //     index = Math.ceil(Math.random() * data.drinks.length)
+    console.log(data.drinks.length)
     console.log(data.drinks[index])
    document.querySelector('.name').innerText = data.drinks[index].strDrink
    document.querySelector('img').src = data.drinks[index].strDrinkThumb
