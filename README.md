@@ -8,4 +8,5 @@ There is a check to see if any measurements or ingredients are null after the th
 
 TODO:
 1. Get a random drink, instead of the first one returned
-2. Create a carousel to house several drinks that the user can scroll through
+  *now it grabs a random drink from the list of drinks using index = Math.ceil(Math.random() * data.drinks.length -1)
+3. Create a carousel to house several drinks that the user can scroll through
