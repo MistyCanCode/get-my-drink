@@ -9,7 +9,7 @@ document.querySelector('#liquor').addEventListener('keypress', function(e){
 
 function getDrink(){
 let drink = document.querySelector('#liquor').value
-let index = Math.ceil(Math.random() * 10)
+let index = 0 //Math.ceil(Math.random() * 10)
 
 const url = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drink}`
 
@@ -18,6 +18,8 @@ fetch(url)
 .then(data => {
 //     index = Math.ceil(Math.random() * data.drinks.length)
     console.log(data.drinks.length)
+    index = Math.ceil(Math.random() * data.drinks.length - 1)
+    console.log(index)
     console.log(data.drinks[index])
    document.querySelector('.name').innerText = data.drinks[index].strDrink
    document.querySelector('img').src = data.drinks[index].strDrinkThumb
