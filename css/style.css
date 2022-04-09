@@ -8,6 +8,7 @@
 }
 body{
   text-align: center;
+  background-color: rgba(140,142,146,.25)
 }
 /******************************************
 /* LAYOUT
@@ -41,6 +42,11 @@ hr{
   border-top: 2px solid black;
   line-height: 2;
   width: 80%;
+}
+span{
+  background-color: lightsteelblue;
+  border: 1px solid black;
+  font-variant: small-caps;
 }
 #instructions{
   width: 75%;
